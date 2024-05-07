@@ -12,7 +12,7 @@ import org.json.JSONObject;
 public class ApiClient {
     // Se envía la solicitud a través de un cliente HTTP
     private final HttpClient httpClient;
-    private static String url = "http://localhost/SOAcopia/controller/apiRest.php";
+    private static String url = "http://empresa.ec/controlador/apiRest.php";
 
     public ApiClient() {
         this.httpClient = HttpClient.newHttpClient();
@@ -115,7 +115,7 @@ public class ApiClient {
         // Crea el objeto JSON con los datos a actualizar
         JSONObject data = new JSONObject();
         data.put("cedula", cedula);
-        data.put("combre", nombre);
+        data.put("nombre", nombre);
         data.put("apellido", apellido);
         data.put("direccion", direccion);
         data.put("telefono", telefono);
